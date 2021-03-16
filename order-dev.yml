@@ -10,7 +10,7 @@ server:
   port: 8081
 env: dev
 girl:
-  name: lili
+  name: shunshun
   age: 20
   hobby: play
   iq: 100
