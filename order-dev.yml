@@ -11,8 +11,8 @@ server:
 env:
   dev
   
-girl:
-  name: xingzi l love you !!!@@
-  age: 20
-  hobby: play
-  iq: 103
+#girl:
+#  name: xingzi l love you !!!@@
+#  age: 20
+#  hobby: play
+#  iq: 103
