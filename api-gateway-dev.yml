@@ -1,1 +1,20 @@
-
+server:
+  port: 9000
+zuul:
+  routes:
+#    myProduct:
+#      path: /myProduct/**
+#      serviceId: product
+       #敏感头，配置
+       #sensitiveHeaders: 
+    #简洁写法
+    product: /myProduct/**
+  #排除某些路由
+  ignored-patterns:
+#    - /myProduct/product/listForOrder
+    - /**/product/listForOrder
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
