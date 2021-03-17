@@ -11,13 +11,19 @@ spring:
     port: 5672
     username: guest
     password: guest
+  cloud:
+    stream:
+      bindings:
+        myMessage:
+          group: order
+  # 2000新版本默认        content-type: application/json
 server:
   port: 8081
 env:
   dev
   
-#girl:
-#  name: xingzi l love you !!!@@
-#  age: 20
-#  hobby: play
-#  iq: 103
+girl:
+  name: xingzi l love you !!!@@
+  age: 20
+  hobby: play
+  iq: 103
