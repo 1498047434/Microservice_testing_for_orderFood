@@ -18,3 +18,5 @@ management:
     web:
       exposure:
         include: "*"
+env:
+  dev
