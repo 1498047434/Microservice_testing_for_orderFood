@@ -6,7 +6,13 @@ spring:
     url: jdbc:mysql://152.136.127.162/order_food?characterEncoding=utf-8&useSSL=false
   jpa:
     show-sql: true
-  rabbitmq:
+  redis:
+    port: 6379
+    host: 152.136.127.162
+    timeout: 3000
+    database: 1
+    password: 123456
+rabbitmq:
     host: localhost
     port: 5672
     username: guest
@@ -16,7 +22,6 @@ spring:
       bindings:
         myMessage:
           group: order
-  # 2000新版本默认        content-type: application/json
 server:
   port: 8081
 env:
