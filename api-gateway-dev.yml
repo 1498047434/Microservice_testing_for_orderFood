@@ -10,7 +10,7 @@ zuul:
   #排除某些路由
   ignored-patterns:
 #    - /myProduct/product/listForOrder
-#    - /**/product/listForOrder
+    - /**/product/listForOrder
 management:
   endpoints:
     web:
